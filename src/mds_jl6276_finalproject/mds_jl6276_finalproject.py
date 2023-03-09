@@ -8,8 +8,10 @@ from folium.plugins import MarkerCluster
 
 
 
+
 # :::::::::::::::::::::::::::::::::::::::::::::::::::::
 # ::::::: DEFINE GET_MAP FUNCTION :::::::::::::::::::::
+
 
 
 def get_map(term):
@@ -26,6 +28,11 @@ def get_map(term):
 
     Examples
     --------
+
+    >>> from mds_jl6276_finalproject import mds_jl6276_finalproject
+    >>> m = get_map('spanish')
+    >>> m
+
 
     >>> from mds_jl6276_finalproject import mds_jl6276_finalproject
     >>> m = get_map('spanish')
@@ -104,4 +111,5 @@ def get_map(term):
 
 
 # :::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 
