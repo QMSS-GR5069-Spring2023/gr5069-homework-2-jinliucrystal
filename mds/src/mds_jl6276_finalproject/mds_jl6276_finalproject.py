@@ -4,6 +4,10 @@ import configparser
 from . import config
 import folium
 from folium.plugins import MarkerCluster
+
+# :::::::::::::::::::::::::::::::::::::::::::::::::::::
+# ::::::: DEFINE GET_MAP FUNCTION :::::::::::::::::::::
+
 def get_map(term):
     """
     Display user specified location on map in New York.
@@ -84,3 +88,4 @@ def get_map(term):
         return None
     return m
 
+# :::::::::::::::::::::::::::::::::::::::::::::::::::::
