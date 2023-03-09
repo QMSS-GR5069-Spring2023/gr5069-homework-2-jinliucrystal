@@ -4,6 +4,7 @@ from folium.plugins import MarkerCluster
 def test():
 
 
+
       """
      Tests the get_map function from the mds_jl6276_finalproject module.
 
@@ -15,6 +16,7 @@ def test():
     m = folium.Map(location=[40.7128, -74.0060], zoom_start=11)
     expected = m
     actual = mds_jl6276_finalproject.get_map('Spanish')
+
 
     m = folium.Map(location=[40.7128, -74.0060], zoom_start=11)
     expected = m
