@@ -4,24 +4,28 @@ import configparser
 from . import config
 import folium
 from folium.plugins import MarkerCluster
+
 def get_map(term):
     """
-    Display user specified location on map in New York.
+    Display user specified location on map.
 
     Parameters
     ----------
-    term: A category, can be 'Spanish', 'bars', 'restaurant'
+    term: str
+        A category, e.g. 'Spanish', 'bars', 'restaurant'.
 
     Returns
     -------
-    Location of the user's search in New York City shown on map.
+    folium.Map
+        Location of the user's search shown on map.
 
     Examples
     --------
     >>> from mds_jl6276_finalproject import mds_jl6276_finalproject
-    >>> m = get_map('spanish')
+    >>> m = get_map('Spanish')
     >>> m
     """
+    
     api_key = config.api_key
     headers = {
       "Authorization": "Bearer " + api_key
