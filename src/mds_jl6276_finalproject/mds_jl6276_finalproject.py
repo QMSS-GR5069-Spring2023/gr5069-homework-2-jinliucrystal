@@ -1,6 +1,8 @@
+
 # ::::::: GLOBAL DEFINITIONS :::::::::::::::::::::
 
 # Load packages
+
 import requests
 import pandas as pd
 import configparser
@@ -22,9 +24,7 @@ def get_map(term):
 
     Examples
     --------
-    >>> from mds_jl6276_finalproject import mds_jl6276_finalproject
-    >>> m = get_map('spanish')
-    >>> m
+  
     """
     api_key = config.api_key
     headers = {
