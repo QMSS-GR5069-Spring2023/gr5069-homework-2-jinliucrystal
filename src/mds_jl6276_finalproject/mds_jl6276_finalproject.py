@@ -1,9 +1,17 @@
+
 import requests
 import pandas as pd
 import configparser
 from . import config
 import folium
 from folium.plugins import MarkerCluster
+
+
+
+# :::::::::::::::::::::::::::::::::::::::::::::::::::::
+# ::::::: DEFINE GET_MAP FUNCTION :::::::::::::::::::::
+
+
 def get_map(term):
     """
     Display user specified location on map in New York.
@@ -18,9 +26,19 @@ def get_map(term):
 
     Examples
     --------
+
     >>> from mds_jl6276_finalproject import mds_jl6276_finalproject
     >>> m = get_map('spanish')
     >>> m
+
+
+    >>> from mds_jl6276_finalproject import mds_jl6276_finalproject
+    >>> m = get_map('spanish')
+    >>> m
+
+  
+
+
     """
     api_key = config.api_key
     headers = {
@@ -83,4 +101,7 @@ def get_map(term):
     if looking_for.shape[0] == 0:
         return None
     return m
+
+
+# :::::::::::::::::::::::::::::::::::::::::::::::::::::
 
