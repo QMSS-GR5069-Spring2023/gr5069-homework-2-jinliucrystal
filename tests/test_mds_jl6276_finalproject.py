@@ -3,6 +3,7 @@ import folium
 from folium.plugins import MarkerCluster
 def test():
 
+
       """
      Tests the get_map function from the mds_jl6276_finalproject module.
 
