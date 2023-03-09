@@ -1,33 +1,37 @@
-# HOMEWORK # 2
+# mds_jl6276_finalproject
 
-**Objective:** This homework exercise is intended to give you first-hand experience with the workflow in a DS shop aligned with current best practices and to help you understand the logic behind these best practices. If you need a refresher, check the slides for [topic 3](https://github.com/marco-morales/QMSS-GR5069_Spring2023/tree/main/topic_03) and [topic 4](https://github.com/marco-morales/QMSS-GR5069_Spring2023/tree/main/topic_04).
+A final project for MDS 2022 Fall. It includes a function that relies on Yelp api, and the funtion takes in a catagory in terms like 'bars', 'restaurant', etc... and return the location of resaurant in New York On map.
 
-### Instructions:
+## Installation
 
-#### (a) select a project and push it to this repo
+```bash
+$ pip install mds_jl6276_finalproject
+```
 
-* choose a project of your own that you have produced in the past: *e.g*  a homework or a final project for another class
-* `push` all files from that project to this repo without changing it. (Note that GitHub is not designed to store data and thus cannot store large files.)
+## Usage
 
-#### (b) add a collaborator
+- For users that want to see restaurants available in NYC based on their tastes, this package is useful to do that. By simply type a term (category of flavor), you can get a map that show restaurants' names and locations in NYC. The source is from Yelp reviews dataset. 
 
-* check the list [**here**](img/homework-2-assignments.png) to find your randomly assigned partners for this homework. You will appear as the owner of this repo with an associated collaborator. You will also appear as a collaborator for someone else's repo
-* ask to be added as a collaborator to your designated owner's repo
-* add your collaborator to this repo
+## Contributing
 
-#### (c) create pull requests for the repo you are a collaborator for
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
 
-* create **one `pull` request per issue** you identify as subject to improvement. Note that the pull request should include the substantive change you are proposing for the repo. Note that you will not receive full marks is you do not add the change itself.
-* in your pull requests explain **why you are recommending specific changes** and **how do you perceive it might help** the you of the future. Note that you will not receive full marks if you do not add these explanations.
-* create at least five (5) pull requests to **improve the structure of the project** [`20 pts`]
-    * these could include - but are not limited to -  enhancements to the folder structure, adding an informative `README` file, adding items to the `.gitignore` file, dropping data folders, etc
-* create at least seven (7) pull requests to **improve coding etiquette** [`40 pts`]
-    * these could include - but are not limited to - reorganizing script structure, improving comments, using relative paths, improving readability, creating (and calling) additional scripts, etc
+## License
 
+`mds_jl6276_finalproject` was created by Jin Liu. It is licensed under the terms of the MIT license.
 
+## Credits
 
-#### (d) act on all pull requests from your collaborator [`40 pts`]
+`mds_jl6276_finalproject` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+# MDS_finalproject
 
-* you will receive multiple `pull` requests from your collaborator with suggestions on how to adopt best practices in your repo
-* use the pull request functionality in GitHub to **accept**, **comment** or **reject** each one of these pull requests.
-* note that you will not receive full marks if you leave pull requests unattended.
+## Folder Structure
+
+### src
+#### This folder contains the orginal final project file "FinalProjectJinLiu.ipynb" that include process of data acquisition, cleaning, manipulation, visualization, etc. These are preparation steps for building the function. It includes the file in  "ipynb". Another file of "mds_jl6276_finalproject.py" includes the function of get_map and a docstring to explain its' usage. 
+
+### docs
+#### This folder includes a vignette with an example on how to use this function to get a map. 
+
+### tests
+#### This folder includes a test file in python that test whether the function work correctly by comparing between expected and actual. 
